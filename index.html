@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- ICONOS -->
+  </head>
+<body>
+    <article class="login-container">
+        <div class="login-content">
+            <img src="login.png" alt="" class="login-pic">
+            <p class="initial-paragraph"><b>Welcome. Please login.</b></p>
+            <form action="" class="data-container">
+                <div class="space-email-password">
+                  <!-- EMAIL Y PASSWORD -->
+                  <span>
+                    <i id="icon-input" class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                <input type="text" name="email" id="" class="input-form" placeholder="Email">
+                 <label for="email"></label>
+                 <br>
+                   <span>
+                    <i id="icon-input" class="fa fa-key" aria-hidden="true"></i>
+                   </span>
+                <input type="password" name="password" id="password" class="input-form" placeholder="Password">
+                 <label for="password"></label>
+                </div>
+                   <span>
+                    <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                   </span>
+                   <!-- EMAIL Y PASSWORD -->
+                   <!-- JAVASCRIPT -->
+                   <script>
+                     var state= false;
+                     function toggle(){
+                       if(state){
+                         document.getElementById("password").
+                         setAttribute("type","password");
+                         document.getElementById("eye").style.color='#7a797e';
+                         state = false;
+                       }
+                       else{
+                        document.getElementById("password").
+                         setAttribute("type","text");
+                         document.getElementById("eye").style.color='#5887ef';
+                         state = true;
+                       }
+                     }
+                   </script>
+                   <!-- JAVASCRIPT -->
+                   <div class="checkbox-div">
+                <input type="checkbox" name="checkbox" id="checkbox-input">
+                 <label for="checkbox" class="checkbox-letter">Remember me</label>
+                </div>
+                <button class="button-sign-in">Sign in</button>
+                <br>
+                    <div class="last-options-container">
+                  <span>
+                 <i id="lock-icon" class="fa fa-lock" aria-hidden="true"></i>
+                  </span>
+                    <p class="forgot-text">
+                        <small>Forgot password? |</small></p>
+                    <p class="to-sign-up">
+                        <small>Don't have an account yet?</small>
+                      <a href="./index-register.html" class="link-to-register">Sign up</a>
+                    </p>
+                    </div>
+            </form>
+        </div>
+    </article>
+</body>
+</html>

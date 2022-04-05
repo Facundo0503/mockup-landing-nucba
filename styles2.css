@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: "Poppins";
+}
+
+.login-content{
+    border: 2px solid rgba(44, 45, 59, 0.575);
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.login-pic{
+    width: 128px;
+    margin-top: 10px;
+}
+
+.initial-paragraph{
+    font-size: 15px;
+    margin-left: -10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input-form{
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.473);
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+.space-email-password{
+    margin-left: -17px;
+    justify-content: center;
+    display: grid;
+}
+
+::placeholder{
+    letter-spacing: 0.3px
+}
+
+#icon-input{  
+    transform: scale(2);
+    color: rgb(100, 46, 224);
+    margin-left: -120px;
+    margin-top: 6px;
+    position: absolute;
+}
+
+#eye{
+    position: absolute;
+    margin: -6px 0 0 155px;
+    cursor: pointer;
+}
+
+.button-sign-in{
+    width: 145px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(100, 46, 224);
+    color: white;
+    margin-left: -11px;
+    margin-top: 35px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+#lock-icon{
+    position: absolute;
+    text-align: left;
+    margin-left: -179px;
+    margin-top: 30px;
+}
+
+.forgot-text{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 25px;
+
+}
+
+.to-sign-up{
+    position: absolute;
+    font-size: 15px;
+    margin-left: 220px;
+    margin-top: 25px;
+
+}
+
+.link-to-register{
+    text-decoration: none;
+}
+
+
